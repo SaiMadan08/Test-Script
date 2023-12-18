@@ -9,6 +9,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then
         echo -e "$R $2 Failed $N"
+        exit 1
     else
         echo -e "$G $2 Installation Success $N"
     fi
@@ -17,6 +18,7 @@ VALIDATE(){
 if [ $ID -ne 0 ]
 then
     echo -e " $R You are not a root user $N "
+    exit 1
 else
     echo -e " $G You are a root user $N "
 fi
@@ -30,3 +32,5 @@ do
         VALIDATE $? "Installation of $package"
     else
         echo "Already installed Skipping"
+    fi
+done
