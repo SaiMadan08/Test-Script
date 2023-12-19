@@ -3,6 +3,7 @@
 R="\e[31m"
 Y="\e[33m"
 G="\e[32m"
+N="\e[0m"
 
 SOURCE_FILE=$1
 read $SOURCE_FILE
