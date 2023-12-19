@@ -6,10 +6,8 @@ G="\e[32m"
 N="\e[0m"
 
 SOURCE_FILE=$1
-read $SOURCE_FILE
 
 DESTINATION_FILE=$2
-read $DESTINATION_FILE
 
 if [ -d "$SOURCE_FILE" ]
 then
