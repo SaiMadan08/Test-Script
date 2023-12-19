@@ -21,7 +21,7 @@ DESTINATION_FILE=$2
 
 if [ -d "$SOURCE_FILE" ]
 then
-    echo -e " $Y Source File Located $N "
+    echo -e " $Y Source File Located $SOURCE_FILE $N "
 else
     echo -e " $R Source File is no detected $N "
     exit 1
@@ -29,7 +29,7 @@ fi
 
 if [ -d "$DESTINATION_FILE" ]
 then
-    echo -e " $Y Destination File Located $N "
+    echo -e " $Y Destination File Located $DESTINATION_FILE $N "
     cp -r "$SOURCE_FILE" "$DESTINATION_FILE"
     VALIDATE $? "Backing up the file"
 else
