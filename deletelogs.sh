@@ -9,6 +9,7 @@ N="\e[0m"
 if [ ! -d $DIR ]
 then
     echo -e "$R Error File doesn't exists $N "
+    exit 1
 fi
 
 FILES_TO_DELETE=$(find $DIR -type f -mtime +14 -name "*.log")
