@@ -24,8 +24,9 @@ ATTEMPTS=0
 
 while [ "$ATTEMPTS" -lt $MAX_ATTEMPTS ]
 do
-    echo -e " $BB ENTER YOUR GUESS $N" (Attempt (($ATTEMPTS+1)) 
+    echo -e " $BB ENTER YOUR GUESS $N (Attempt $((ATTEMPTS+1)) "
     read GUESS
+    (($ATTEMPTS++))
     if [ $GUESS -lt $TARGET ]
     then
         echo -e " $C YOUR GUESS IS LESS THAN THE TARGET $N "
@@ -41,7 +42,6 @@ do
             fi
         fi
     fi
-(($ATTEMPTS++))
 done
 
 
