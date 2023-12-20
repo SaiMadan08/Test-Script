@@ -19,7 +19,7 @@ read NAME
 
 echo -e " $Y WELCOME TO THE GAME $1 $N "
 
-echo -e " $Black $WY You Have Only 3 Chances $N "
+echo -e " $Black $WY You Have Only 3 Chances, Guess From 1 to 20 $N "
 
 TARGET=$(( ($RANDOM % 20) + 1 ))
 
