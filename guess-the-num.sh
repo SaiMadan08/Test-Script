@@ -2,6 +2,8 @@
 
 USER=$1
 
+echo "
+
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -9,9 +11,10 @@ N="\e[0m"
 BB="\e[44m"
 C="\e[36m"
 M="\e[35m"
-BY="\e[43m"
+WY="\e[47m"
+BM="\e[45m"
 
-echo -e " $Y WELCOME TO THE GAME $1 $N"
+echo -e " $Y $BM WELCOME TO THE GAME $1 $N"
 
 TARGET=$(( ($RANDOM % 20) + 1 ))
 
@@ -32,7 +35,7 @@ do
         else
             if [ $GUESS -eq $TARGET ]
             then
-                echo -e " $G $BY CONGRATULATIONS $USER YOU WON THE GAME $N "
+                echo -e " $G $WY CONGRATULATIONS $USER YOU WON THE GAME $N "
             fi
         fi
     fi
