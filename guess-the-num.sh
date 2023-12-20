@@ -2,7 +2,7 @@
 
 USER=$1
 
-echo "
+echo -e " $BM ENTER YOUR NAME $N "
 
 R="\e[31m"
 G="\e[32m"
@@ -14,7 +14,7 @@ M="\e[35m"
 WY="\e[47m"
 BM="\e[45m"
 
-echo -e " $Y $BM WELCOME TO THE GAME $1 $N"
+echo -e " $Y $BM WELCOME TO THE GAME $1 $N "
 
 TARGET=$(( ($RANDOM % 20) + 1 ))
 
@@ -23,7 +23,7 @@ ATTEMPTS=0
 
 while [ "$ATTEMPTS" -lt $MAX_ATTEMPTS ]
 do
-    echo -e " $BB ENTER YOUR GUESS $N (Attempt $(ATTEMPTS + 1))"
+    echo -e " $BB ENTER YOUR GUESS $N (Attempt $((ATTEMPTS + 1)) "
     read GUESS
     if [ $GUESS -lt $TARGET ]
     then
