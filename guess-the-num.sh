@@ -2,7 +2,8 @@
 
 USER=$1
 
-echo -e " $BM ENTER YOUR NAME $N "
+echo -e " $C ENTER YOUR NAME $N "
+read NAME
 
 R="\e[31m"
 G="\e[32m"
