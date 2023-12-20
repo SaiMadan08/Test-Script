@@ -24,7 +24,7 @@ ATTEMPTS=0
 
 while [ "$ATTEMPTS" -lt $MAX_ATTEMPTS ]
 do
-    echo -e " $BB ENTER YOUR GUESS $N (Attempt $((ATTEMPTS + 1)) "
+    echo -e " $BB ENTER YOUR GUESS $N (Attempt (($ATTEMPTS+1)) "
     read GUESS
     if [ $GUESS -lt $TARGET ]
     then
