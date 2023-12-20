@@ -26,22 +26,16 @@ while [ "$ATTEMPTS" -lt $MAX_ATTEMPTS ]
 do
     echo -e " $BB ENTER YOUR GUESS $N (Attempt $((ATTEMPTS+1)) "
     read GUESS
-    (($ATTEMPTS++))
     if [ $GUESS -lt $TARGET ]
     then
         echo -e " $C YOUR GUESS IS LESS THAN THE TARGET $N "
-    else
-        if [ $GUESS -gt $TARGET ]
-        then
-            echo -e " $M YOUR GUESS IS GREATER THAN THE TARGET $N "
-        else
-            if [ $GUESS -eq $TARGET ]
-            then
-                echo -e " $G $WY CONGRATULATIONS $USER YOU WON THE GAME $N "
+    elif  [ $GUESS -gt $TARGET ]
+        echo -e " $M YOUR GUESS IS GREATER THAN THE TARGET $N "
+    else  [ $GUESS -eq $TARGET ]
+        echo -e " $G $WY CONGRATULATIONS $USER YOU WON THE GAME $N "
                 exit 1
-            fi
-        fi
     fi
+    ((ATTEMPTS++))
 done
 
 
