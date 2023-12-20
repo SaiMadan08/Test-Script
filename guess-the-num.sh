@@ -11,7 +11,7 @@ C="\e[36m"
 M="\e[35m"
 BY="\e[43m"
 
-echo " $Y WELCOME TO THE GAME $1 $N"
+echo -e " $Y WELCOME TO THE GAME $1 $N"
 
 TARGET=$(( ($RANDOM % 20) + 1 ))
 
@@ -20,7 +20,7 @@ ATTEMPTS=0
 
 while [ "$ATTEMPTS" -lt $MAX_ATTEMPTS ]
 do
-    echo -e " $BB ENTER YOUR GUESS $N (Attempt $(ATTEMPTS + 1))"
+    echo -e " $BB ENTER YOUR GUESS $N (Attempt $((ATTEMPTS + 1))"
     read GUESS
     if [ $GUESS -lt $TARGET ]
     then
