@@ -14,6 +14,7 @@ C="\e[36m"
 M="\e[35m"
 WY="\e[47m"
 BM="\e[45m"
+B="\e[34m"
 
 echo -e " $Y WELCOME TO THE GAME $1 $N "
 
@@ -28,11 +29,11 @@ do
     read GUESS
     if [ $GUESS -eq $TARGET ]
     then
-        echo -e " $G $WY CONGRATULATIONS $USER YOU WON THE GAME $N "
+        echo -e " $M $WY CONGRATULATIONS $USER YOU WON THE GAME $N "
         exit 1
     elif  [ $GUESS -gt $TARGET ]
     then
-        echo -e " $M YOUR GUESS IS GREATER THAN THE TARGET $N "
+        echo -e " $B YOUR GUESS IS GREATER THAN THE TARGET $N "
     else
             echo -e " $C YOUR GUESS IS LESS THAN THE TARGET $N "
     fi
