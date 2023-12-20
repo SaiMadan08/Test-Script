@@ -36,9 +36,9 @@ do
         exit 1
     elif  [ $GUESS -gt $TARGET ]
     then
-        echo -e " $B $Black YOUR GUESS IS GREATER THAN THE TARGET $N "
+        echo -e " $B  YOUR GUESS IS GREATER THAN THE TARGET $N "
     else
-            echo -e " $C $Black YOUR GUESS IS LESS THAN THE TARGET $N "
+            echo -e " $C  YOUR GUESS IS LESS THAN THE TARGET $N "
     fi
     ((ATTEMPTS++))
 done
