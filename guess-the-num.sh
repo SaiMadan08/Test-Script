@@ -3,6 +3,7 @@
 USER=$1
 
 echo -e " $C ENTER YOUR NAME $N "
+echo -e " $Black $WY You Have Only 3 Chances $N "
 read NAME
 
 R="\e[31m"
@@ -15,6 +16,7 @@ M="\e[35m"
 WY="\e[47m"
 BM="\e[45m"
 B="\e[34m"
+Black="\e[30m"
 
 echo -e " $Y WELCOME TO THE GAME $1 $N "
 
@@ -29,7 +31,7 @@ do
     read GUESS
     if [ $GUESS -eq $TARGET ]
     then
-        echo -e " $M $WY CONGRATULATIONS $USER YOU WON THE GAME $N "
+        echo -e " $M $BM CONGRATULATIONS $USER YOU WON THE GAME $N "
         exit 1
     elif  [ $GUESS -gt $TARGET ]
     then
