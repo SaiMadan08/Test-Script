@@ -12,6 +12,7 @@ BM="\e[45m"
 B="\e[34m"
 Black="\e[30m"
 BY="\e[43m"
+W="\e[37m"
 
 USER=$1
 
@@ -44,5 +45,5 @@ do
     ((ATTEMPTS++))
 done
 
-echo " The Targeted number is $TARGET "
+echo -e " $W The Targeted number is $TARGET $N "
 
