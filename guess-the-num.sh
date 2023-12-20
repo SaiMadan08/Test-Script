@@ -11,6 +11,7 @@ WY="\e[47m"
 BM="\e[45m"
 B="\e[34m"
 Black="\e[30m"
+BY="\e[43m"
 
 USER=$1
 
@@ -41,6 +42,9 @@ do
             echo -e " $C  YOUR GUESS IS LESS THAN THE TARGET $N "
     fi
     ((ATTEMPTS++))
+
+    if [ $ATTEMPTS -eq MAX_ATTEMPTS ]
+        echo " $R  $BY SORRY YOU LOST THE GAME $N "
 done
 
 
