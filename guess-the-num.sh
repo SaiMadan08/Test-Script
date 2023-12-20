@@ -32,8 +32,8 @@ do
         exit 1
     elif  [ $GUESS -gt $TARGET ]
         echo -e " $M YOUR GUESS IS GREATER THAN THE TARGET $N "
-    else
-        echo -e " $C YOUR GUESS IS LESS THAN THE TARGET $N "
+        else
+            echo -e " $C YOUR GUESS IS LESS THAN THE TARGET $N "
     fi
     ((ATTEMPTS++))
 done
