@@ -16,9 +16,10 @@ USER=$1
 
 echo -e " $C ENTER YOUR NAME $N "
 read NAME
-echo -e " $Black $WY You Have Only 3 Chances $N "
 
 echo -e " $Y WELCOME TO THE GAME $1 $N "
+
+echo -e " $Black $WY You Have Only 3 Chances $N "
 
 TARGET=$(( ($RANDOM % 20) + 1 ))
 
