@@ -44,8 +44,3 @@ do
     ((ATTEMPTS++))
 done
 
-if [ $ATTEMPTS -eq MAX_ATTEMPTS ]
-        echo " $R  $BY SORRY YOU LOST THE GAME $N "
-fi
-
-
