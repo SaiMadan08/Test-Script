@@ -1,11 +1,5 @@
 #!/bin/bash
 
-USER=$1
-
-echo -e " $C ENTER YOUR NAME $N "
-echo -e " $Black $WY You Have Only 3 Chances $N "
-read NAME
-
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -17,6 +11,12 @@ WY="\e[47m"
 BM="\e[45m"
 B="\e[34m"
 Black="\e[30m"
+
+USER=$1
+
+echo -e " $C ENTER YOUR NAME $N "
+read NAME
+echo -e " $Black $WY You Have Only 3 Chances $N "
 
 echo -e " $Y WELCOME TO THE GAME $1 $N "
 
