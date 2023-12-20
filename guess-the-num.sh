@@ -31,7 +31,8 @@ do
         echo -e " $C YOUR GUESS IS LESS THAN THE TARGET $N "
     elif  [ $GUESS -gt $TARGET ]
         echo -e " $M YOUR GUESS IS GREATER THAN THE TARGET $N "
-    else  [ $GUESS -eq $TARGET ]
+    else
+        [ $GUESS -eq $TARGET ]
         echo -e " $G $WY CONGRATULATIONS $USER YOU WON THE GAME $N "
                 exit 1
     fi
