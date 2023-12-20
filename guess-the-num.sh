@@ -44,3 +44,5 @@ do
     ((ATTEMPTS++))
 done
 
+echo " The Targeted number is $TARGET "
+
