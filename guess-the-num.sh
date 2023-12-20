@@ -15,7 +15,7 @@ M="\e[35m"
 WY="\e[47m"
 BM="\e[45m"
 
-echo -e " $Y $BM WELCOME TO THE GAME $1 $N "
+echo -e " $Y WELCOME TO THE GAME $1 $N "
 
 TARGET=$(( ($RANDOM % 20) + 1 ))
 
@@ -40,7 +40,7 @@ do
             fi
         fi
     fi
-    (($ATTEMPTS++))
+(($ATTEMPTS++))
 done
 
 
