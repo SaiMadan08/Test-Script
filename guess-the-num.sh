@@ -32,7 +32,7 @@ do
     read GUESS
     if [ $GUESS -eq $TARGET ]
     then
-        echo -e " $M $BM CONGRATULATIONS $USER YOU WON THE GAME $N "
+        echo -e " $M $Black CONGRATULATIONS $USER YOU WON THE GAME $N "
         exit 1
     elif  [ $GUESS -gt $TARGET ]
     then
